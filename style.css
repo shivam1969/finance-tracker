@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f2f2f2;
+    transition: .3s;
+}
+
+body.dark {
+    background: #111;
+    color: white;
+}
+
+.container {
+    width: 450px;
+    margin: 40px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.balance-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+}
+
+#addBtn {
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Popup */
+#popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #0006;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+}
+
+.popup-box input, .popup-box select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.popup-box button {
+    width: 48%;
+    padding: 8px;
+    margin: 5px 1%;
+}
+
+/* Transaction List */
+ul#list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+ul#list li {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px #ccc;
+}
+
+body.dark ul#list li {
+    background: #222;
+}

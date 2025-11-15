@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+    <header>
+        <h2>Finance Tracker</h2>
+        <button id="themeToggle">🌙</button>
+    </header>
+
+    <section class="balance-box">
+        <h3>Total Balance</h3>
+        <p id="balance">₹0</p>
+        <button id="addBtn">+ Add Entry</button>
+    </section>
+
+    <canvas id="chart"></canvas>
+
+    <h3 class="sub-title">Transactions</h3>
+    <select id="filter">
+        <option value="all">All</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+
+    <ul id="list"></ul>
+</div>
+
+<!-- Popup -->
+<div id="popup">
+    <div class="popup-box">
+        <h3>Add Transaction</h3>
+
+        <input type="text" id="desc" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+
+        <button id="save">Save</button>
+        <button id="close">Cancel</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
